@@ -1,6 +1,6 @@
 const {User,Profile} = require('../models');
 const {userRegisterSchema} = require('../validations/uservalidation');
-const logger = require('../middleware/publicmiddleware/winston');
+const logger = require('../utils/winston');
 const profile = require('../models/profile');
 
 /**

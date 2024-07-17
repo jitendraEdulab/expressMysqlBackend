@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const usercontroller = require('../controllers/usercontrollers');
-const profileUpload = require('../middleware/privatemiddleware/fileupload');
-const {createToken, verifyToken} = require('../middleware/privatemiddleware/authentication');
+const profileUpload = require('../middleware/fileupload');
+const {createToken, verifyToken} = require('../middleware/authentication');
 
 router.post('/register',usercontroller.registerUser);
 
